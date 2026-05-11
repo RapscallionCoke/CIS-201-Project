@@ -1,0 +1,155 @@
+* {
+  box-sizing:border-box;
+}
+
+#extra {
+    position: absolute;
+    transform: rotate(-10deg);
+    right: 10%;
+    background-image: url(imgs/currentlistening.png);
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 33vh;
+    z-index: 11;
+    color: rgb(240, 68, 25);
+    
+}
+#extra p {
+    font-family: "Special Elite";
+}
+
+
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px 1px rgb(29, 29, 29);
+    background-color: black;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+hr {
+    color: white;
+}
+
+/*Nav bar shit.*/
+#navbar {
+    height: 15%;
+}
+
+#navbar img {
+    width: auto;
+    height: 80%;
+    flex-shrink: 0;
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#navbar img:hover {
+    transform: scale(1.1) rotate(-10deg);
+}
+
+
+
+
+
+#mainContent {
+    display: flex;
+}
+
+
+#leftSidebar {
+    width: 200px;
+    height: 600px;
+    padding: 20px;
+    font-size: smaller;
+    margin: 2%;
+    border: 2px solid white;
+    border-radius: 2px;
+    overflow: auto;
+    text-align: left;
+}
+
+main {
+    width: 700px;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 20px;
+    margin: 2%;
+    margin-left: 0;
+    text-align: left;
+}
+
+footer {
+    padding: 10px;
+}
+
+
+
+body {
+    background-image: url("../imgs/background.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    background-color: black;
+    
+}
+
+h1, h2, h3 {
+    font-family: "Special Elite", 'Courier New', Courier, monospace;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+#photograph {
+    position: absolute;
+    top: 80%;
+    transform: scaleX(1) rotate(-10deg);
+    width: fit-content;
+}
+
+#photograph img {
+    width: 12vw;
+    height: auto;
+}
+
+#photograph img:hover {
+    transform: rotate(-5deg) scale(1.05);
+}
+
+
+
+
+#header img:hover {
+    animation-name: headercouch;
+    animation-duration: 3s;
+}
+
+#header img {
+    width: 10%;
+    height: auto;
+}
+
+@keyframes headercouch {
+    50% {transform: rotateY(-180deg);}
+
+}

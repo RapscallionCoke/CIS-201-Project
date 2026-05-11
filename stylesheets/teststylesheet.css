@@ -1,0 +1,129 @@
+* {
+  box-sizing:border-box;
+}
+
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px 1px rgb(29, 29, 29);
+    background-color: black;
+    position: relative;
+}
+
+hr {
+    color: white;
+}
+
+#header img {
+    width: 20%;
+    height: auto;
+}
+
+/*Nav bar shit.*/
+#navbar {
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin: 2%;
+    ;
+}
+
+#navbar img {
+    height: 60%;
+    width: auto;
+    flex-shrink: 0;
+}
+
+#navbar ul {
+    display: flex;
+    padding-top: 10px;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#navbar img:hover {
+    transform: rotate(-10deg);
+}
+
+
+
+
+
+#mainContent {
+    display: flex;
+}
+
+
+#leftSidebar {
+    width: 200px;
+    height: 600px;
+    padding: 20px;
+    font-size: smaller;
+    margin: 2%;
+    border: 2px solid white;
+    border-radius: 2px;
+    overflow: auto;
+    text-align: left;
+}
+
+main {
+    width: 915px;
+    height: 1067px;
+    padding: 200px;
+    margin-left: 0;
+    text-align: left;
+    background-image: url("imgs/border.png");
+}
+
+footer {
+    padding: 10px;
+}
+
+
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    background-color: black;
+    
+}
+
+
+
+
+
+
+
+
+
+h1, h2 {
+    font-family: "Special Elite", 'Courier New', Courier, monospace;
+}
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#photograph {
+    position: absolute;
+    top: 80%;
+    right: 1%;
+    transform: rotate(-10deg);
+    width: fit-content;
+}
+
+#photograph img {
+    width: 12vw;
+    height: auto;
+}
+
+#photograph img:hover {
+    transform: rotate(-5deg) scale(1.05);
+}

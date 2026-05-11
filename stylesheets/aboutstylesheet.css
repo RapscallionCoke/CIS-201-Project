@@ -1,0 +1,177 @@
+* {
+  box-sizing:border-box;
+}
+#container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#bigContainer {
+    display: flex;
+    padding-left: 130px;
+}
+
+#me{
+    width: 300px;
+    max-width: 700px;
+    max-height: 400px;
+    margin: 0 0 0 10%;
+    box-shadow: 0px 0px 50px 1px rgb(29, 29, 29);
+    background-color: black;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 2px;
+    transform: rotate(-10deg);
+    z-index: 10;
+    padding: 10px;
+}
+
+#container {
+    transform: rotate(3deg);
+    max-width: 1000px;
+    margin: 0;
+    box-shadow: 0px 0px 50px 1px rgb(29, 29, 29);
+    background-color: black;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+hr {
+    color: white;
+}
+
+main {
+    width: 700px;
+    padding: 20px;
+    margin: 2%;
+    margin-left: 0;
+    text-align: left;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+footer {
+    padding: 10px;
+}
+
+
+
+body {
+    background-image: url("../imgs/background.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+h1, h2 {
+    font-family: "Special Elite", 'Courier New', Courier, monospace;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+table {
+    width: 100%;
+}
+
+table, td, th {
+    border: 2px solid white;
+    border-radius: 2px;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    background-color: white;
+    color: black;
+}
+
+.fav {
+    width: 400px;
+    height: 380px;
+    box-shadow: 0px 0px 50px 1px rgb(29, 29, 29);
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 2px;
+    z-index: 100;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 1%;
+}
+
+.favInner {
+    border: 2px white solid; 
+    border-radius: 2px; 
+    margin: 2%;
+}
+
+.fav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+/*Nav bar shit.*/
+#headerArea {
+    position: fixed;
+    top: 5;
+    z-index: 1000;
+}
+
+#navbar img {
+    width: auto;
+    height: 80%;
+    flex-shrink: 0;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    align-items: start;
+}
+
+#navbar img:hover {
+    transform: scale(1.1) rotate(-10deg);
+}
+
+#header img:hover {
+    animation-name: headercouch;
+    animation-duration: 3s;
+}
+
+#header img {
+    width: 10%;
+    height: auto;
+}
+
+@keyframes headercouch {
+    50% {transform: rotateY(-180deg);}
+
+}

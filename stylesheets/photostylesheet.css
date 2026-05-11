@@ -1,0 +1,160 @@
+* {
+  box-sizing:border-box;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px 1px rgb(29, 29, 29);
+    background-color: black;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+hr {
+    color: white;
+}
+
+/*Nav bar shit.*/
+#navbar {
+    height: 15%;
+}
+
+#navbar img {
+    width: auto;
+    height: 80%;
+    flex-shrink: 0;
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+#navbar img:hover {
+    transform: scale(1.1) rotate(-10deg);
+}
+
+
+
+
+
+#mainContent {
+    display: flex;
+}
+
+
+#leftSidebar {
+    width: 200px;
+    height: 600px;
+    padding: 20px;
+    font-size: smaller;
+    margin: 2%;
+    border: 2px solid white;
+    border-radius: 2px;
+    overflow: auto;
+    text-align: left;
+}
+
+main {
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 20px;
+    margin: 2%;
+    text-align: left;
+}
+
+main img {
+    width: 30%;
+    text-align: right;
+}
+
+footer {
+    padding: 10px;
+}
+
+
+
+body {
+    background-image: url("../imgs/background.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+h1, h2 {
+    font-family: "Special Elite", 'Courier New', Courier, monospace;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+#photograph {
+    display: flex;
+    flex-flow: wrap;
+    padding: 10%;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin: 2%;
+
+}
+.photograph-item {
+    transform-origin: top;
+    transform: scaleX(1) rotate(-2deg);
+    border: 5px white solid;
+    border-bottom: 20px white solid;
+    margin: 3%;
+    background-color: white;
+    box-shadow: 0px 0px 50px 1px rgb(29, 29, 29);
+}
+
+#photograph img {
+    width: 8vw;
+    height: auto;
+}
+
+.photograph-item:hover {
+    animation-name: photographtilt;
+    animation-duration: 1.5s;
+}
+
+
+
+
+
+
+#header img:hover {
+    animation-name: headercouch;
+    animation-duration: 3s;
+}
+
+#header img {
+    width: 10%;
+    height: auto;
+}
+
+
+
+@keyframes headercouch {
+    50% {transform: rotateY(-180deg);}
+
+}
+
+@keyframes photographtilt {
+    50% {transform: rotateZ(15deg)}
+    75% {transform: rotateZ(-14deg)}
+    100% {transform: rotateZ(-2deg);}
+}
